@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    
+    <groupId>org.example</groupId>
+    <artifactId>SimpleApp</artifactId>
+    <version>1.0-SNAPSHOT</version>
+   
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+        <javac.src.version>1.8</javac.src.version>
+        <javac.target.version>1.8</javac.target.version>
+        <maven.compiler.version>3.8.0</maven.compiler.version>
+        <scala.compat.version>2.11</scala.compat.version>
+        <spark.version>2.4.7</spark.version>
+        <spark.kafka.version>2.4.7</spark.kafka.version>
+        <cobrix.version>2.2.3</cobrix.version>
+        <slf4j.version>1.7.16</slf4j.version>
+        <jackson.version>2.6.7</jackson.version>
+        <commons.collections.version>3.2.2</commons.collections.version>
+        <junit.version>5.1.0</junit.version>
+        <jetbrains.version>21.0.1</jetbrains.version>
+        <commons-io.version>2.4</commons-io.version>
+        <commons-text.version>1.9</commons-text.version>
+        <commons-lang3.version>3.5</commons-lang3.version>
+        <ffm-api.version>1.1.1</ffm-api.version>
+        <jason.goodwin.version>0.4.1</jason.goodwin.version>
+        <konghq.version>3.11.11</konghq.version>
+        <apache.xbean.version>4.10</apache.xbean.version>
+        <spark-bigquery.version>0.21.1</spark-bigquery.version>
+        <mockito.version>3.4.0</mockito.version>
+        <maven.shade.version>3.1.0</maven.shade.version>
+        <typesafe-config.version>1.4.1</typesafe-config.version>
+        <jdbc.api.version>19.9.0.0</jdbc.api.version>
+        <log4j.version>2.17.2</log4j.version>
+    </properties>
+    <dependencies>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_${scala.compat.version}</artifactId>
+            <version>${spark.version}</version>
+<!--            <scope>provided</scope>-->
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming_${scala.compat.version}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-10_${scala.compat.version}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+
+<!--        &lt;!&ndash; For Kafka clients &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.kafka</groupId>-->
+<!--            <artifactId>kafka-clients</artifactId>-->
+<!--            <version>0.11.0.3</version>-->
+<!--        </dependency>-->
+<!--    -->
+<!--        &lt;!&ndash; Kafka &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>org.apache.kafka</groupId>-->
+<!--            <artifactId>kafka_${scala.compat.version}</artifactId>-->
+<!--            <version>0.11.0.3</version>-->
+<!--        </dependency>-->
+        
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-sql_${scala.compat.version}</artifactId>
+            <version>${spark.version}</version>
+        </dependency>
+    
+        <!-- For writing CSV file -->
+    
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>4.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.9</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
